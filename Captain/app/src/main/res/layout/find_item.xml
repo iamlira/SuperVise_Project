@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/find_layout">
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_head"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+            android:textSize="@dimen/dimen_font_size_llarge"
+            android:text="@string/nickname" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_border_size_small"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/button_shape">
+
+                <ImageView
+                    android:id="@+id/iv_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_border_size_small"
+                    android:layout_marginBottom="@dimen/dimen_border_size_small"
+                    android:layout_marginLeft="@dimen/dimen_border_size_small"
+                    android:src="@mipmap/male" />
+
+                <TextView
+                    android:id="@+id/tv_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_border_size_small"
+                    android:layout_marginRight="@dimen/dimen_border_size_small"
+                    android:layout_gravity="center_vertical"
+                    android:text="22岁"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_border_size_small"
+                android:background="@drawable/city_shape">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_border_size_small"
+                    android:layout_marginRight="@dimen/dimen_border_size_small"
+                    android:layout_gravity="center_vertical"
+                    android:text="杭州"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_border_size_small"
+            android:textSize="@dimen/dimen_font_size_normal"
+            android:text="@string/et_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_alignTop="@id/iv_head"
+        android:textColor="#444444"
+        android:text="@string/now" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/iv_head"
+        android:layout_marginRight="@dimen/dimen_font_size_normal"
+        android:layout_marginLeft="@dimen/dimen_font_size_normal"
+        android:background="#cccccc" />
+</RelativeLayout>

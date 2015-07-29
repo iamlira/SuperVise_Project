@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_border_size_lllarge"
+        android:background="#34495e">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_detail"
+            android:textSize="@dimen/dimen_font_size_xlarge"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+            android:layout_toRightOf="@id/iv_back"
+            android:textColor="#1BBC9B" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/head"
+            android:textSize="@dimen/dimen_font_size_llarge"
+            android:textColor="#444444" />
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_launcher" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dimen_font_size_llarge"
+            android:textColor="#444444"
+            android:text="@string/nickname"/>
+        <EditText
+            android:id="@+id/et_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/nickname"/>
+        </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dimen_font_size_llarge"
+            android:textColor="#444444"
+            android:text="@string/gender"/>
+        <TextView
+            android:id="@+id/et_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/gender"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dimen_font_size_llarge"
+            android:textColor="#444444"
+            android:text="@string/birth"/>
+        <TextView
+            android:id="@+id/et_birth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/birth"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/dimen_font_size_llarge"
+            android:textColor="#444444"
+            android:text="@string/city"/>
+        <EditText
+            android:id="@+id/et_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/city"/>
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal" />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="@drawable/button_shape"
+        android:text="@string/save"
+        android:textSize="@dimen/dimen_font_size_llarge"
+        android:textColor="@android:color/white"/>
+</LinearLayout>

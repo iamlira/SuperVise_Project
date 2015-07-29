@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_border_size_lllarge"
+        android:background="#34495e">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:src="@mipmap/arrow_left" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_demand"
+            android:layout_centerInParent="true"
+            android:textSize="@dimen/dimen_font_size_xlarge"
+            android:textColor="#1BBC9B" />
+    </RelativeLayout>
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/slidingmenu_offset"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="@null"
+        android:gravity="top|left"
+        android:hint="@string/et_title"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="#cccccc" />
+    <EditText
+        android:id="@+id/et_content"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/slidingmenu_offset"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="@null"
+        android:gravity="top|left"
+        android:hint="@string/et_content"/>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:background="#cccccc" />
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:text="@string/send"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_font_size_xlarge"
+        android:background="@drawable/button_shape"/>
+</LinearLayout>

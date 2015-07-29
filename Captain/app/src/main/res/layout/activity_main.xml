@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/main_tab_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:background="#34495e"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dimen_border_size_small"
+            android:gravity="center"
+            android:checked="true"
+            android:button="@null"
+            android:drawableTop="@drawable/find_selector"
+            android:textColor="@drawable/tab_textcolor"
+            android:text="@string/find" />
+
+        <ImageView
+            android:id="@+id/iv_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/add" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:layout_weight="1"
+            android:paddingTop="@dimen/dimen_border_size_small"
+            android:gravity="center"
+            android:checked="false"
+            android:drawableTop="@drawable/mine_selector"
+            android:textColor="@drawable/tab_textcolor"
+            android:text="@string/mine" />
+    </RadioGroup>
+
+    <com.juanliu.captain.widget.CustomViewPager
+        android:id="@+id/custom_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_tab_group">
+
+    </com.juanliu.captain.widget.CustomViewPager>
+
+</RelativeLayout>
