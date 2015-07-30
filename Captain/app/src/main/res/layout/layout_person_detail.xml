@@ -107,7 +107,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:text="@string/gender"/>
+            android:text="@string/male"/>
     </RelativeLayout>
     <View
         android:layout_width="fill_parent"

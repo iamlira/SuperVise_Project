@@ -23,7 +23,7 @@
         <RadioButton
             android:id="@+id/rb_male"
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="fill_parent"
             android:button="@null"
             android:checked="true"
             android:layout_gravity="center_vertical"
@@ -42,7 +42,7 @@
     <RadioButton
         android:id="@+id/rb_female"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="fill_parent"
         android:button="@null"
         android:layout_gravity="center_vertical"
         android:drawableRight="@drawable/female_selector"

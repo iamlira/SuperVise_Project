@@ -40,6 +40,10 @@ public class MyDetailActivity extends Activity implements View.OnClickListener {
         tv_gender.setOnClickListener(this);
     }
 
+    /*
+    * 使用layout中的gender_dialog，重新定制选择性别对话框
+    * 根据gender字符串的类型对对话框中的radiobutton进行选择
+    * */
     private void showdialog(){
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
@@ -63,9 +67,12 @@ public class MyDetailActivity extends Activity implements View.OnClickListener {
             public void onClick(DialogInterface dialog, int which) {
                 if (rb_male.isChecked()) {
                     gender = "1";
+                    tv_gender.setText("男");
                 } else if (rb_female.isChecked()) {
                     gender = "0";
+                    tv_gender.setText("女");
                 }
+
             }
         });
         AlertDialog dialog = builder.create();
@@ -79,7 +86,7 @@ public class MyDetailActivity extends Activity implements View.OnClickListener {
                 finish();
                 break;
             case R.id.tv_gender:
-                showdialog();
+                showdialog();//点击性别，弹出对话框
                 break;
         }
     }
