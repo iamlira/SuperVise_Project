@@ -18,7 +18,7 @@ public class FindFragment extends BaseFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         mview = inflater.inflate(R.layout.find_fragment_layout, container, false);
-        find_adapter=new FindAdapter(this.getActivity().getApplicationContext(),5);
+        find_adapter=new FindAdapter(this.getActivity().getApplicationContext(),8);
         initView();
         return mview;
     }
