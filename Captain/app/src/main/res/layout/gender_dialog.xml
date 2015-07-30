@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_border_size_lllarge"
+        android:background="#34495e">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose_gender"
+            android:textSize="@dimen/dimen_font_size_xlarge"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textColor="#1BBC9B" />
+    </RelativeLayout>
+    <RadioGroup
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:checked="true"
+            android:layout_gravity="center_vertical"
+            android:drawableRight="@drawable/male_selector"
+            android:layout_marginTop="@dimen/dimen_border_size_normal"
+            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+            android:layout_marginRight="@dimen/dimen_border_size_normal"
+            android:text="@string/male"/>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#cccccc"
+            android:layout_marginRight="@dimen/dimen_border_size_normal"
+            android:layout_marginLeft="@dimen/dimen_border_size_normal"
+            android:layout_marginTop="@dimen/dimen_border_size_normal" />
+    <RadioButton
+        android:id="@+id/rb_female"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:button="@null"
+        android:layout_gravity="center_vertical"
+        android:drawableRight="@drawable/female_selector"
+        android:layout_marginTop="@dimen/dimen_border_size_normal"
+        android:layout_marginLeft="@dimen/dimen_border_size_normal"
+        android:layout_marginRight="@dimen/dimen_border_size_normal"
+        android:layout_marginBottom="@dimen/dimen_border_size_normal"
+        android:text="@string/female"/>
+    </RadioGroup>
+</LinearLayout>

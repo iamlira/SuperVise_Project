@@ -103,7 +103,7 @@
             android:textColor="#444444"
             android:text="@string/gender"/>
         <TextView
-            android:id="@+id/et_gender"
+            android:id="@+id/tv_gender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
