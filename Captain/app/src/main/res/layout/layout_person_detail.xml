@@ -131,7 +131,7 @@
             android:textColor="#444444"
             android:text="@string/birth"/>
         <TextView
-            android:id="@+id/et_birth"
+            android:id="@+id/tv_birth"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
@@ -173,6 +173,7 @@
         android:layout_marginLeft="@dimen/dimen_border_size_normal"
         android:layout_marginTop="@dimen/dimen_border_size_normal" />
     <Button
+        android:id="@+id/btn_save"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/dimen_border_size_normal"
